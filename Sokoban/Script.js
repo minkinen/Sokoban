@@ -62,7 +62,7 @@ function newGame() {
     document.getElementById("minutes").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
     document.getElementById("moves").textContent = "Moves: 0";
-    document.getElementById("stowed").textContent = "Stowed: 0 / " + requiredGoals;
+    document.getElementById("boxes").textContent = "Boxes: 0 / " + requiredGoals;
     document.getElementById("newGame").textContent = "Level " + level;
     playerPosition= null;
     playerMoves = 0;
@@ -191,11 +191,11 @@ function movePlayer(playerElement) {
     }   
     if (goalsCompleted == goals.length) {
         stopClock();
-        document.getElementById("stowed").textContent = "Level " + level + " solved !!!";
+        document.getElementById("boxes").textContent = "Level " + level + " solved !!!";
     }
     else {
         document.getElementById("moves").textContent = `Moves: ${playerMoves}`;
-        document.getElementById("stowed").textContent = `Stowed: ${goalsCompleted} / ${goals.length}`;
+        document.getElementById("boxes").textContent = `Boxes: ${goalsCompleted} / ${goals.length}`;
     }
 }
 
