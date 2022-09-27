@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+  
+html { 
+  padding: 20px;
+}
+
+body {
+  background: #383838;
+}
+
+body > div div {
+  height: 36px;
+  border: 1px solid black;
+  }
+
+#container {
+    width: 684px;
+    height: 576px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 36px);
+}
+
+.tile-wall {
+  background-image: url("images/Wall.png");  
+}
+
+.tile-space {
+  background-image: url("images/Floor.png");
+}
+
+.tile-goal {
+  background-image: url("images/Goal.png");
+}
+
+.entity-player {
+  background-image: url("images/Player.png");
+}
+
+.entity-block {
+  background-image: url("images/Box.png");
+}
+
+.entity-block-goal {
+  background-image: url("images/ScoreBox.png");
+}
+
+
+.textbox {
+  display: inline-block;
+  text-align: center;
+  width:168px;
+  line-height: 80px;
+  height: 80px;
+  border: 1px solid #DDDDDD;
+  background: #2A2A2A;
+  color: #ABABAB;
+  font-weight: bold;
+}
+
+.textbox p {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+a { color: #d7ba75; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
